@@ -37,7 +37,10 @@ class Ship:
         return any(deck.is_alive for deck in self.decks)
 
     @staticmethod
-    def check_is_ship_horizontal_or_single_deck(start: tuple, end: tuple) -> bool:
+    def check_is_ship_horizontal_or_single_deck(
+            start: tuple,
+            end: tuple
+    ) -> bool:
         return start[0] == end[0]
 
 
