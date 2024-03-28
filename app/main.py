@@ -47,7 +47,6 @@ class Battleship:
         self.field = {(deck.row, deck.column): ship
                       for ship in ships_instances_list
                       for deck in ship.decks}
-
         if not self._validate_field(ships_instances_list):
             raise Exception()
 
