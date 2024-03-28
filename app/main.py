@@ -48,7 +48,7 @@ class Battleship:
                       for ship in ships_instances_list
                       for deck in ship.decks}
         if not self._validate_field(ships_instances_list):
-            raise Exception()
+            raise Exception("Such a field cannot be created")
 
     def fire(self, location: tuple[int, int]) -> str:
         if location in self.field:
